@@ -1,0 +1,39 @@
+{
+  "name": "ria-volume-measurement-tool",
+  "version": "0.0.1",
+  "description": "Volume measurement tool for LuciadRIA",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:ts": "tsc -p tsconfig.json",
+    "build:scss": "sass src/styles.scss dist/styles.css --no-source-map --style=compressed",
+    "copy:assets": "copyfiles -u 1 src/**/*.{svg,scss} dist/",
+    "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:assets",
+    "dev": "npm run build -- --watch",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@luciad/ria": ">=2025.0",
+    "@luciad/ria-toolbox-controller": ">=2025.0",
+    "@luciad/ria-toolbox-core": ">=2025.0",
+    "@luciad/ria-toolbox-geolocation": ">=2025.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.79.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "copyfiles": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipecarrillo100/ria-volume-measurement-tool.git"
+  }
+}
