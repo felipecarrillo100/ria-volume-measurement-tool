@@ -11,7 +11,7 @@ npm install ria-volume-measurement-tool
 ## Usage
 
 ```typescript
-import { VolumeMeasureController } from 'volume-measurement-tool';
+import { VolumeMeasureController } from 'ria-volume-measurement-tool';
 
 const controller = new VolumeMeasureController();
 ```
@@ -42,8 +42,6 @@ const controller = new VolumeMeasureController({
 
 // Add controller to map
 map.controller = controller;
-
-
 ```
 
 ## Events
