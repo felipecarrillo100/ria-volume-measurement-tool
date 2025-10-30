@@ -17,7 +17,8 @@ import {
     rotatePointAroundLine,
     scale,
     sub,
-    toPoint
+    toPoint,
+    length
 } from "@luciad/ria-toolbox-core/util/Vector3Util.js";
 import {clamp} from "@luciad/ria-toolbox-core/util/Math.js";
 import {createFacePolygons} from "@luciad/ria-toolbox-core/util/AdvancedShapeFactory.js";
@@ -57,7 +58,6 @@ import {calculatePointingDirection} from "@luciad/ria-toolbox-core/util/Perspect
 import {CoordinateReference} from "@luciad/ria/reference/CoordinateReference.js";
 import {Controller} from "@luciad/ria/view/controller/Controller.js";
 import {Point} from "@luciad/ria/shape/Point.js";
-import {length} from "@luciad/ria-toolbox-core/src/util/Vector3Util";
 
 const ResizeHandleIconSize = 20;
 

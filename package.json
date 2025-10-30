@@ -1,6 +1,6 @@
 {
   "name": "ria-volume-measurement-tool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Volume measurement tool for LuciadRIA",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
