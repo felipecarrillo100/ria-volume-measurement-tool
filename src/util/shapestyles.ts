@@ -1,5 +1,4 @@
 import type {IconStyle} from "@luciad/ria/view/style/IconStyle.js";
-import resizeIcon from './icons/resizeSlider.svg';
 import {OcclusionMode} from "@luciad/ria/view/style/OcclusionMode.js";
 import {Shape} from "@luciad/ria/shape/Shape.js";
 import type {GeoCanvas} from "@luciad/ria/view/style/GeoCanvas.js";
@@ -12,8 +11,11 @@ import type {ShapeStyle} from "@luciad/ria/view/style/ShapeStyle.js";
 import {Point} from "@luciad/ria/shape/Point.js";
 import {createCircle} from "@luciad/ria-toolbox-core/util/IconFactory.js";
 
+// To import icons without loader
+import {resizeIconInSVG} from "./resizeIconInSVG";
+
 const HANDLE_STYLE: IconStyle = {
-    url: resizeIcon,
+    url: resizeIconInSVG,
     width: '40px',
     height: '40px',
     occlusionMode: OcclusionMode.ALWAYS_VISIBLE,

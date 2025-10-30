@@ -1,6 +1,6 @@
 {
   "name": "ria-volume-measurement-tool",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Volume measurement tool for LuciadRIA",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,8 +12,8 @@
     "clean": "rimraf dist",
     "build:ts": "tsc -p tsconfig.json",
     "build:scss": "sass src/styles.scss dist/styles.css --no-source-map --style=compressed",
-    "copy:assets": "copyfiles -u 1 src/**/*.{svg,scss} dist/",
-    "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:assets",
+    "copy:scss": "copyfiles -u 1 src/**/*.{scss} dist/",
+    "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:scss",
     "dev": "npm run build -- --watch",
     "test": "jest"
   },

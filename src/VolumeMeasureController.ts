@@ -1243,9 +1243,7 @@ export class VolumeMeasureController extends Controller {
     // OK!
     private standardizePlane() {
         if (this._depth < 0) {
-            console.log("Standardization required!");
-            console.log("Width: ", this._width);
-            console.log("Depth:", this._depth);
+            // console.log("Standardization required!");
             // Calculate the fourth corner (opposite along depth)
             // Move the first corner to the fourth corner
             const fourthCorner = toPoint(
